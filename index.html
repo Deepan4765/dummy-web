@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML with CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffbb;
+            margin: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #34495e;
+            font-size: 18px;
+        }
+
+        .my-button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .my-button:hover {
+            background-color: #b92929;
+        }
+    </style>
+     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+     <script>
+         function showMessage() {
+             alert("You clicked the button! 🎉");
+ 
+             // Trigger confetti burst
+             confetti({
+                 particleCount: 10000,
+                 spread: 1000,
+                 origin: { y: 0.6 }
+             });
+         }
+     </script>
+</head>
+<body>
+
+    <h1>Good Morning Babe!</h1>
+    <p>I Love You <3 :) </p>
+    <button class="my-button" onclick="showMessage()">Click Me</button>
+
+</body>
+</html>
